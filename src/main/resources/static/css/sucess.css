@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.opslag{
+    border:2px solid black;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 20px;
+}
+span{
+    font-weight: bold;
+    font-size:25px;
+}
+.tekst-container{
+    display: flex;
+    align-items: center;
+}
+.tekst-container > span{
+    margin-right: 5px;
+}
+.success-knap{
+    display: flex;
+    flex-direction: column;
+}
+.knap{
+    text-decoration: none;
+    padding: 10px;
+    background: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    border:2px solid black
+}
+.success-tekst{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.success-tekst > p{
+    text-align: center;
+}
+.success-tekst > i{
+    color: green;
+    font-size: 6rem;
+    text-align: center;
+}
+
+
+

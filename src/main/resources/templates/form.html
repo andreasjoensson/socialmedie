@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Star - Create new post 💌</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="intro-tekst">
+    <h1>SOCIALDATAMATIKER</h1>
+
+    <p>Opret et opslag med en titel, tekst, og hvilket programmeringssprog du foretrækker.</p>
+</div>
+
+<div>
+<form action="/submit-post" method="POST">
+
+    <input type="text" name="titel" placeholder="Titel" autocomplete="off">
+
+    <input type="text" name="tekst" placeholder="Tekst" autocomplete="off"/>
+
+    <input type="date" name="dato" placeholder="Dato" autocomplete="off"/>
+
+    <div class="valg">
+        <input type="checkbox" name="isActive" value="offentlig" autocomplete="off">
+        <label class="labelTekst">Offentlig</label>
+
+        <input type="checkbox" name="isActive" value="privat" autocomplete="off">
+        <label class="labelTekst">Privat</label>
+    </div>
+
+    <input type="text" name="sprog" placeholder="Ynlings programmeringssprog?" autocomplete="off"/>
+
+    <div class="knap">
+        <button type="submit"> Opret <i class="fas fa-space-shuttle"></i> </button>
+    </div>
+
+</form>
+</div>
+
+</body>
+</html>

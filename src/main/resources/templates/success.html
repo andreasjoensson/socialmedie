@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Star - Success 🎉</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="css/sucess.css" rel="stylesheet">
+</head>
+<body>
+<div class="success-tekst">
+    <h1>Stor success du har nu fået oprettet dit opslag!</h1>
+    <i class="fas fa-check-circle"></i>
+</div>
+
+<div class="opslag">
+    <div class="tekst-container">
+        <span>Titel:</span><p th:text="${titel}"> </p>
+    </div>
+
+    <div class="tekst-container">
+        <span>Tekst:</span> <p th:text="${tekst}"> </p>
+    </div>
+
+    <div class="tekst-container">
+        <span>Dato:</span> <p th:text="${dato}"> </p>
+    </div>
+
+    <div class="tekst-container">
+        <span>Status:</span> <p th:text="${erAktiv}"> </p>
+    </div>
+
+    <div class="tekst-container">
+        <span>Yndlings programmeringsprog</span>
+        <td th:switch="${sprog}">
+        <span th:case="java"> <img th:src="@{https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png}" width="100" height="100" alt="(spacebox logo)"></span>
+        <span th:case="javascript" ><img th:src="@{https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png}" width="100" height="100" alt="(spacebox logo)"></span>
+            <span th:case="python"><img th:src="@{http://www.pngmart.com/files/7/Python-PNG-File.png}" width="100" height="100" alt="(spacebox logo)"></span>
+    </td>
+    </div>
+
+</div>
+
+
+<div class="success-knap">
+    <h2>Kunne du tænke dig at se de andre opslag?</h2>
+
+    <a class="knap" href="/dashboard">Se opslag</a>
+</div>
+
+
+</body>
+</html>

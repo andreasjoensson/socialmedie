@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Star - Dashboard 📈</title>
+</head>
+<body>
+<h1>Her er et overblik over alle de seneste opslag</h1>
+
+<div class="row">
+    <ul th:each="post : ${posts}">
+        <li th:text="${post}"></li>
+    </ul>
+</div>
+
+</body>
+</html>
